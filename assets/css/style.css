@@ -1,0 +1,114 @@
+/* ! ++++++++++ BASIC ++++++++++ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main: #6e847b;
+  --light: #cedfd6;
+  --dark: #32493f;
+  --white: white;
+  --black: black;
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url(../font/Raleway/static/Raleway-Regular.ttf);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  font-family: "Regular";
+  color: var(--light);
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+p,
+label,
+table {
+  font-size: 2rem;
+}
+
+/* ! ++++++++++ MAIN ++++++++++ */
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--main);
+}
+
+article {
+  width: 65rem;
+  height: 80rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 1rem;
+  border: 2px solid var(--dark);
+  border-radius: 0.5rem;
+}
+
+.körper {
+  width: 60%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+input,
+select {
+  width: 80%;
+  height: 3rem;
+  color: var(--light);
+  background-color: var(--main);
+  border: none;
+  border: 2px solid var(--dark);
+  border-radius: 0.5rem;
+}
+
+label,
+input,
+select {
+  margin-bottom: 2rem;
+}
+
+.output {
+  width: 100%;
+}
+
+.btn {
+  width: 10rem;
+  height: 4rem;
+}
+
+table {
+  width: 80%;
+}

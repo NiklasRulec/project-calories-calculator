@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <section>
+      <article>
+        <h1>Kalorien-Rechner</h1>
+        <form onsubmit="calcFunction(); return false">
+          <label>Körpergröße in CM</label>
+          <input type="number" id="grösse" required />
+          <label>Alter</label>
+          <input type="number" id="alter" required />
+          <label>Gewicht</label>
+          <input type="number" id="gewicht" required />
+          <div class="körper">
+            <label>Körperbau</label>
+            <input type="radio" value="weiblich" name="körperbau" checked />
+            <label>Weiblich</label>
+            <input type="radio" value="männlich" name="körperbau" />
+            <label>Männlich</label>
+          </div>
+          <label>Arbeits- und Freizeitaktivität</label>
+          <select name="aktivität" id="aktivität">
+            <option value="0.95">Schlafen</option>
+            <option value="1.2">Nur Sitzen oder Liegen</option>
+            <option value="1.5">
+              Ausschließlich sitzende Tätigkeit mit wenig oder keiner
+              körperlichen Aktivität in der Freizeit, z.B. Büroarbeit
+            </option>
+            <option value="1.7">
+              Sitzende Tätigkeit mit zeitweilig gehender oder stehender
+              Tätigkeit, z.B. Studierende, Fließbandarbeiter, Laboranten,
+              Kraftfahrer
+            </option>
+            <option value="1.9">
+              Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer,
+              Kellner, Handwerker, Mechaniker, Hausfrauen
+            </option>
+            <option value="2.2">
+              Körperlich anstrengende berufliche Arbeit
+            </option>
+          </select>
+          <input type="submit" value="Berechnen" class="btn" />
+        </form>
+        <div class="output">
+          <table>
+            <tr>
+              <th></th>
+              <th>kcal</th>
+              <th>kJ</th>
+            </tr>
+            <tr>
+              <td>Grundumsatz</td>
+              <td><p class="grundumsatz-kcal"></p></td>
+              <td><p class="grundumsatz-kj"></p></td>
+            </tr>
+            <tr>
+              <td>Gesamtumsatz</td>
+              <td><p class="gesamtumsatz-kcal"></p></td>
+              <td><p class="gesamtumsatz-kj"></p></td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <h3>
+            Das Ergebnis des Rechners sollten Sie als Orientierungswert ansehen,
+            da es verschiedene Fehlermöglichkeiten gibt wie abweichender
+            Grundumsatz, falsche Zeiteinschätzung etc.
+          </h3>
+        </div>
+      </article>
+    </section>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
