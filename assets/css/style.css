@@ -110,6 +110,12 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: var(--dark);
 }
 
 .output {
