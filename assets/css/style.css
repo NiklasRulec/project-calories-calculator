@@ -28,6 +28,7 @@ html {
 
 h1 {
   font-size: 4rem;
+  margin-bottom: 1rem;
 }
 
 h2 {
@@ -35,7 +36,8 @@ h2 {
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  color: var(--dark);
 }
 
 p,
@@ -59,7 +61,7 @@ section {
 
 article {
   width: 65rem;
-  height: 80rem;
+  height: 90rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -69,13 +71,7 @@ article {
   border-radius: 0.5rem;
 }
 
-.körper {
-  width: 60%;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
+/* ! ++++++++++ FORM ++++++++++ */
 
 form {
   display: flex;
@@ -100,15 +96,31 @@ select {
   margin-bottom: 2rem;
 }
 
-.output {
-  width: 100%;
+.körper {
+  width: 60%;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .btn {
   width: 10rem;
   height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.output {
+  width: 100%;
 }
 
 table {
   width: 80%;
+  height: 12rem;
+}
+
+.footer {
+  max-width: 80%;
 }
